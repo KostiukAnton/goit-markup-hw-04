@@ -92,6 +92,8 @@ section {
     display: block;
     position: relative;
     transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .studio::before,
@@ -126,6 +128,8 @@ section {
     padding-top: 24px;
     padding-bottom: 24px;
     transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-link:hover {
     color: #404BBF;
@@ -140,7 +144,11 @@ section {
 background-color: #2E2F42;
 padding-top: 188px;
 padding-bottom: 188px;
-background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-1.jpg);
+max-width: 1440рх;
+background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-1.jpg) ;
+/* background-size: cover; */
+background-position: center;
+background-repeat: no-repeat;
 }
 .solutions-title {
     font-weight: 700;
@@ -170,6 +178,8 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     margin-right: auto;
     display: block;
     transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .solutions-button:hover,
 .solutions-button:focus {
@@ -287,6 +297,8 @@ height: 40px;
 background-color: #4D5AE5;
 border-radius: 50%;
 transition-property: background-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 /* background-image: url(../images/svg/Ellipse.svg); */
 }
 
@@ -316,8 +328,10 @@ transition-property: background-color;
     row-gap: 48px;
 }
 
-.portfolio-item:nth-child(2) {
-box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+.portfolio-item:hover,
+.portfolio-item:focus {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    cursor: pointer;
 }
 
 .portfolio-item {
@@ -326,6 +340,8 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
     position: relative;
     overflow: hidden;
     transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .overlay {
     position: absolute;
