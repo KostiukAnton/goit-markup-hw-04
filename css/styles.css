@@ -225,10 +225,6 @@ margin-right: auto;
     margin-bottom: 8px;
 }
 
-.benefits-icon {
-    margin: 24px 100px;
-}
-
 .benefits-item-title {
     font-weight: 500;
     font-size: 20px;
@@ -443,7 +439,7 @@ align-items: center;
     margin-bottom: 16px;
 }
 
-.social-links-list {
+.contaiter-social-media .social-links-list {
     gap: 16px;
 }
 
